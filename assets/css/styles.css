@@ -1,147 +1,89 @@
-body {
-  min-height: 2000px;
-}
-body > .ui.container {
-  margin-top: 6em;
-}
-.offices {
-  color: #fff;
-}
-.flags a {
-  padding: .012em;
-}
-/* Nav */
-.ui.fixed.borderless.menu {
-  background-color: #4a008a;
-}
-
-.ui .computer.only .item {
-  color: #fff;
-}
-
-.ui .computer.only .item:hover {
-  background: #6311aa !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
-}
-
-.ui .computer .item.active {
-  background: #00ba49;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-}
-
-.ui.dropdown.item .menu {
-  background-color: #4a008a !important;
-}
-.ui.menu .ui.dropdown .menu > .item {
-  color: #fff !important;
-}
-.ui.menu .ui.dropdown .menu > .item.active {
-  background-color: #00ba49 !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
-}
-.ui.menu .ui.dropdown .menu > .item:hover {
-  background-color: #6311aa !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
-}
-
-.ui.fixed.borderless.menu .row > a.header.item {
-  font-size: 1.2em;
-}
-
-/* Mobile */
-.tablet.mobile.only .header, .ui.icon.button > .icon {
-  color: #fff;
-}
-
-.tablet.mobile.only .header:hover {
-  background-color: #6311aa !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
-}
-
-.ui.basic.button:hover {
-   background: #6311aa !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
-}
-
-.ui.vertical.menu {
+.hidden.menu {
   display: none;
-  border: none;
-  box-shadow: none;
-  background-color: #4a008a;
-}
-.ui.vertical.menu > .item {
-  padding-left: 1.428em;
-  color: #fff;
 }
 
-.ui.vertical.menu > .item.active {
-  padding-left: 1.428em;
-  background-color: #00ba49 !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
+.masthead.segment {
+  min-height: 700px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 3em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
 }
 
-.ui.vertical.menu > .item:hover {
-  padding-left: 1.428em;
-  background-color: #6311aa !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
+.ui.vertical.stripe {
+  padding: 8em 0em;
 }
-.ui.vertical.menu .item .title {
-  color: #fff;
+.ui.vertical.stripe h3 {
+  font-size: 2em;
 }
-.ui.vertical.menu .item .title .dropdown.icon {
-  float: none;
-  color: #fff;
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
 }
-
-.ui.vertical.menu .item .content .item {
-  padding: 0.5em 1em;
-  color: #fff;
+.ui.vertical.stripe .floated.image {
+  clear: both;
 }
-
-.ui.vertical.menu .item .content .item:hover {
-  padding: 0.5em 1em;
-  background-color: #4a008a !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
 }
 
-.ui.vertical.menu .item .content .item.active {
-  padding: 0.5em 1em;
-  background-color: #00ba49 !important;
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-.ui.vertical.menu .header.item {
-  text-transform: uppercase;
-  color: #fff;
-}
-/* Nav */
-
-.ui.message {
-  background-color: rga(238, 238, 238);
-  box-shadow: none;
-  padding: 5em 4em;
-}
-.ui.message h1.ui.header {
-  font-size: 4.5em;
-  color: #4A008A;
-}
-.ui.message p.lead {
-  font-size: 1.3em;
-  color: #333333;
-  line-height: 1.4;
-  font-weight: 300;
+.footer.segment {
+  padding: 5em 0em;
 }
 
-.ui.purple.button {
-  background-color: #4A008A;
+.secondary.pointing.menu .toc.item {
+  display: none;
 }
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+.ui.inverted.segment, .ui.primary.inverted.segment{
+background-image: url('https://images.unsplash.com/photo-1446080501695-8e929f879f2b?fit=crop&fm=jpg&h=725&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1225');
+}
+
